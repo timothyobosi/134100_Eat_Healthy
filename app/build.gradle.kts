@@ -56,4 +56,10 @@ dependencies {
 
     //Appcompat
     implementation("androidx.appcompat:appcompat:1.6.1")
+
+    //scalable unit size
+    implementation("com.intuit.sdp:sdp-android:1.0.6")
+
+    //scalable unit text size
+    implementation("com.intuit.ssp:ssp-android:1.0.6")
 }
