@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yellow">#FF9A00</color>
+    <color name="brown">#433232</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="purple_200">#7A3FB5</color>
+    <color name="purple_700">#A93FB5</color>
+    <color name="teal_200">#816161</color>
+    <dimen name="_50sdp">50dp</dimen>
+    <dimen name="_20sdp">20dp</dimen>
+</resources>
