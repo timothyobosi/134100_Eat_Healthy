@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.eathealthy"
-        minSdk = 24
+        minSdk = 28
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -53,4 +53,7 @@ dependencies {
 
     //material design
     implementation("com.google.android.material:material:1.11.0")
+
+    //Appcompat
+    implementation("androidx.appcompat:appcompat:1.6.1")
 }
