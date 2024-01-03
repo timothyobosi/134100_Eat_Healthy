@@ -69,5 +69,11 @@ dependencies {
     //crop image library
     implementation("com.vanniktech:android-image-cropper:4.5.0")
 
+    //easy permission- This method will request the system permissions and show the rationale string provided if necessary
+    implementation("pub.devrel:easypermissions:3.0.0")
+
+    //coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1")
+
 
 }
