@@ -62,4 +62,9 @@ dependencies {
 
     //scalable unit text size
     implementation("com.intuit.ssp:ssp-android:1.0.6")
+
+    //circle image view
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+
+
 }
