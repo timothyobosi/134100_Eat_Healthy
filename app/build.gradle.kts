@@ -66,5 +66,8 @@ dependencies {
     //circle image view
     implementation("de.hdodenhof:circleimageview:3.1.0")
 
+    //crop image library
+    implementation("com.vanniktech:android-image-cropper:4.5.0")
+
 
 }
