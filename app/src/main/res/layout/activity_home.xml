@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/gray"
     tools:context=".SplashActivity">
 
 
@@ -26,6 +26,7 @@
                 android:text="All Recipes"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_20ssp" />
+
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -53,6 +54,7 @@
                 android:id="@+id/rv_main_category"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_margin="@dimen/_10sdp"
                 android:orientation="horizontal"
                 tools:itemCount="1"

@@ -9,6 +9,19 @@
     <color name="teal_200">#816161</color>
     <color name="hintTextColor">#808080</color>
     <color name="transparent">#00000000</color>
-    <color name="darkGray">#A9A9A9</color>
+    <color name="darkGray">#595555</color>
+    <color name="gray">#f5f5f5</color>
     <color name="youtube">#FF0000</color>
+    <dimen name="_180sdp">180dp</dimen>
+    <dimen name="_260sdp">260dp</dimen>
+    <dimen name="_11ssp">11sp</dimen>
+    <dimen name="_70sdp">70dp</dimen>
+    <dimen name="_5sdp">5dp</dimen>
+    <dimen name="_80sdp">80dp</dimen>
+    <dimen name="_4sdp">4dp</dimen>
+    <dimen name="_50sdp">50dp</dimen>
+    <dimen name="_20sdp">20dp</dimen>
+    <dimen name="_10sdp">10dp</dimen>
+    <dimen name="_20ssp">20sp</dimen>
+    <dimen name="_15ssp">15sp</dimen>
 </resources>
