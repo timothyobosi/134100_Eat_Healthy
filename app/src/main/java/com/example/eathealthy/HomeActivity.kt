@@ -31,6 +31,12 @@ class HomeActivity : BaseActivity() {
         arrSubCategory.add(Recipes(2,"Chicken and mushroom  hotpot"))
         arrSubCategory.add(Recipes(3,"Banana pancakes"))
         arrSubCategory.add(Recipes(4,"kapsalon"))
+        arrSubCategory.add(Recipes(5,"Capati and Stew"))
+        arrSubCategory.add(Recipes(6,"Rice and matoke"))
+        arrSubCategory.add(Recipes(7,"Barbecue and minced meat"))
+        arrSubCategory.add(Recipes(8,"Omellete and eggs"))
+        arrSubCategory.add(Recipes(9,"Pilau and Sharwama"))
+        arrSubCategory.add(Recipes(10,"Fried Potatoes"))
 
         subCategoryAdapter.setData(arrSubCategory)
 
