@@ -5,10 +5,11 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
+
 @Entity(tableName = "CategoryItems")
 data class CategoryItems(
     @PrimaryKey(autoGenerate = true)
-    var id:Int,
+    var id: Int,
 
     @ColumnInfo(name = "idcategory")
     @Expose
@@ -28,8 +29,11 @@ data class CategoryItems(
     @ColumnInfo(name = "strcategorydescription")
     @Expose
     @SerializedName("strCategoryDescription")
-    val strcategorydescription: String
+    val strcategorydescription: String,
+
+    @ColumnInfo(name = "ingredients")
+    val ingredients: String, // Add the ingredients property
+
+    @ColumnInfo(name = "preparationSteps")
+    val preparationSteps: String // Add the preparationSteps property
 )
-
-
-

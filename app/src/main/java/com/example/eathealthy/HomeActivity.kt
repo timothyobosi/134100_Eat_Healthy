@@ -40,12 +40,161 @@ class HomeActivity : BaseActivity() {
 
         subCategoryAdapter.setData(arrSubCategory)
 
+        // Example CategoryItems with ingredients and preparation steps
+        val categoryItem = CategoryItems(
+            id = 1,
+            idcategory = "Beef",
+            strcategory = "Beef",
+            strcategorythumb = "Thumbnail URL",
+            strcategorydescription = "Description",
+            ingredients = "Beef, Salt, Pepper",
+            preparationSteps = "1. Marinate beef with salt and pepper\n2. Grill until cooked"
+
+        )
+
+        arrMainCategory.add(categoryItem)
+
+
 
         val rv_sub_category :RecyclerView = findViewById(R.id.rv_sub_category)
         rv_sub_category.layoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
         rv_sub_category.adapter = subCategoryAdapter
 
+        // Example CategoryItems with ingredients and preparation steps
+        arrMainCategory.add (CategoryItems(
+            id = 1,
+            idcategory = "Beef",
+            strcategory = "Beef",
+            strcategorythumb = "Thumbnail URL",
+            strcategorydescription = "Description",
+            ingredients = "Beef, Salt, Pepper",
+            preparationSteps = "1. Marinate beef with salt and pepper\n2. Grill until cooked"
+
+        )
+        )
+
+        arrMainCategory.add(
+            CategoryItems(
+                id = 2,
+                idcategory = "Chicken",
+                strcategory = "Chicken",
+                strcategorythumb = "Thumbnail URL",
+                strcategorydescription = "Description",
+                ingredients = "Chicken, Mushrooms, Salt, Pepper",
+                preparationSteps = "1. Marinate chicken with salt and pepper\n2. Cook with mushrooms"
+            )
+        )
+
+        arrMainCategory.add(
+            CategoryItems(
+                id = 3,
+                idcategory = "Dessert",
+                strcategory = "Banana pancakes",
+                strcategorythumb = "Thumbnail URL",
+                strcategorydescription = "Description",
+                ingredients = "Bananas, Flour, Eggs, Milk",
+                preparationSteps = "1. Mash bananas and mix with flour, eggs, and milk\n2. Cook as pancakes"
+            )
+
+        )
+        // Recipe 4
+        arrMainCategory.add(
+            CategoryItems(
+                id = 4,
+                idcategory = "Lamb",
+                strcategory = "Lamb",
+                strcategorythumb = "Thumbnail URL",
+                strcategorydescription = "Description",
+                ingredients = "Lamb, Herbs, Garlic, Salt, Pepper",
+                preparationSteps = "1. Marinate lamb with herbs, garlic, salt, and pepper\n2. Roast until tender"
+            )
+        )
+
+// Recipe 5
+        arrMainCategory.add(
+            CategoryItems(
+                id = 5,
+                idcategory = "Beef",
+                strcategory = "Beef",
+                strcategorythumb = "Thumbnail URL",
+                strcategorydescription = "Description",
+                ingredients = "Beef, Potatoes, Cheese, Sauce",
+                preparationSteps = "1. Cook beef and layer with potatoes\n2. Add cheese and sauce, bake until golden"
+            )
+        )
+
+// Recipe 6
+        arrMainCategory.add(
+            CategoryItems(
+                id = 6,
+                idcategory = "Chicken",
+                strcategory = "Chicken and Rice",
+                strcategorythumb = "Thumbnail URL",
+                strcategorydescription = "Description",
+                ingredients = "Chicken, Rice, Vegetables, Soy Sauce",
+                preparationSteps = "1. Cook chicken and rice with vegetables\n2. Add soy sauce for flavor"
+            )
+        )
+
+// Continue this process for the remaining recipes...
+
+// Recipe 7
+        arrMainCategory.add(
+            CategoryItems(
+                id = 7,
+                idcategory = "Dessert",
+                strcategory = "Chocolate Cake",
+                strcategorythumb = "Thumbnail URL",
+                strcategorydescription = "Description",
+                ingredients = "Flour, Sugar, Cocoa Powder, Eggs",
+                preparationSteps = "1. Mix ingredients and bake until a toothpick comes out clean"
+            )
+        )
+
+// Recipe 8
+        arrMainCategory.add(
+            CategoryItems(
+                id = 8,
+                idcategory = "Lamb",
+                strcategory = "Grilled Lamb Chops",
+                strcategorythumb = "Thumbnail URL",
+                strcategorydescription = "Description",
+                ingredients = "Lamb Chops, Rosemary, Garlic, Olive Oil",
+                preparationSteps = "1. Marinate lamb chops with rosemary, garlic, and olive oil\n2. Grill until cooked"
+            )
+        )
+
+// Recipe 9
+        arrMainCategory.add(
+            CategoryItems(
+                id = 9,
+                idcategory = "Chicken",
+                strcategory = "Chicken Salad",
+                strcategorythumb = "Thumbnail URL",
+                strcategorydescription = "Description",
+                ingredients = "Chicken, Lettuce, Tomatoes, Cucumbers, Dressing",
+                preparationSteps = "1. Cook chicken and toss with vegetables and dressing"
+            )
+        )
+
+// Recipe 10
+        arrMainCategory.add(
+            CategoryItems(
+                id = 10,
+                idcategory = "Dessert",
+                strcategory = "Fruit Salad",
+                strcategorythumb = "Thumbnail URL",
+                strcategorydescription = "Description",
+                ingredients = "Assorted Fruits, Honey, Mint",
+                preparationSteps = "1. Chop fruits and mix with honey, garnish with mint"
+            )
+        )
+
+        mainCategoryAdapter.setData(arrMainCategory)
+
     }
+
+
 
     private fun getDataFromDb(){
         launch {
@@ -65,5 +214,6 @@ class HomeActivity : BaseActivity() {
 
         }
     }
+
 
 }
